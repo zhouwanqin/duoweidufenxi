@@ -8,8 +8,8 @@ from modules.text_features import build_vocabulary_df, build_features_for_corpus
 st.title("① 特征提取")
 
 # 内置资源路径（不显示给用户）
-VOCAB_DIR = "/home/zhuyu/zhouwanqin/streamlit_text_factor_app/词单20241107"
-FEATURE_EXCEL = "/home/zhuyu/zhouwanqin/streamlit_text_factor_app/20241107_语言特征整理.xlsx"
+VOCAB_DIR = os.path.join(os.path.dirname(__file__), "..", "词单20241107")
+FEATURE_EXCEL = os.path.join(os.path.dirname(__file__), "..", "20241107_语言特征整理.xlsx")
 
 chinese_font_setup()
 
